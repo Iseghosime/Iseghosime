@@ -211,12 +211,10 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "d136a322-8377-493e-8f5b-2c0554f10ff3",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"  pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 400ms\", () => {\r",
-									"  pm.expect(pm.response.responseTime).to.be.below(400);\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Response property matches Secret Key\", function () {\r",
@@ -243,9 +241,7 @@
 									"pm.test(\"Body includes date created\", function () {\r",
 									"  pm.expect(pm.response.text()).to.include(\"dateCreated\");\r",
 									"});\r",
-									"pm.test(\"Body includes date of Birth\", function () {\r",
-									"  pm.expect(pm.response.text()).to.include(\"dateofBirth\");\r",
-									"});\r",
+									"\r",
 									"pm.test(\"Body includes email\", function () {\r",
 									"  pm.expect(pm.response.text()).to.include(\"email\");\r",
 									"});\r",
@@ -259,8 +255,7 @@
 									"  pm.expect(pm.response.text()).to.include(\"phoneNumber\");\r",
 									"});"
 								],
-								"type": "text/javascript",
-								"id": "d136a322-8377-493e-8f5b-2c0554f10ff3"
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -975,12 +970,12 @@
 	],
 	"variable": [
 		{
-			"id": "d4530413-bcaf-4d6e-b422-5bb6b4fd49cc",
+			"id": "720803b1-d131-4572-bd3b-fb6d2d1bce29",
 			"key": "baseurl",
 			"value": "https://sandbox.wallets.africa"
 		},
 		{
-			"id": "84c9c101-8f79-45de-acb7-5db89eb093e3",
+			"id": "f07309e3-219b-463e-ba4d-32169dd35072",
 			"key": "baseUrl",
 			"value": "https://sandbox.wallets.africa",
 			"type": "string"
