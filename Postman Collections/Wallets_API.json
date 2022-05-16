@@ -29,7 +29,7 @@
 									"\r",
 									"pm.test(\"Wallet balance\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.data.walletBalance).to.eql(176598.75);\r",
+									"    pm.expect(jsonData.data.walletBalance).to.be.a(\"number\");\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Wallet currency\", function () {\r",
@@ -42,7 +42,7 @@
 							}
 						}
 					],
-					"_postman_id": "04c1dd6a-e929-4d93-9f30-df3fe7581206",
+					"id": "04c1dd6a-e929-4d93-9f30-df3fe7581206",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -63,8 +63,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Currency\": \"NGN\",\r\n    \"SecretKey\": \"hfucj5jatq8h\"\r\n}",
-							"options": {}
+							"raw": "{\r\n    \"Currency\": \"NGN\",\r\n    \"SecretKey\": \"hfucj5jatq8h\"\r\n}"
 						},
 						"url": "{{baseurl}}/self/balance"
 					},
@@ -104,7 +103,7 @@
 							}
 						}
 					],
-					"_postman_id": "69c84c6e-c950-46e8-8e1d-99acfaf829be",
+					"id": "69c84c6e-c950-46e8-8e1d-99acfaf829be",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -125,8 +124,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Currency\": \"USD\",\r\n    \"SecretKey\": \"hfucj5jatq8h\"\r\n}",
-							"options": {}
+							"raw": "{\r\n    \"Currency\": \"USD\",\r\n    \"SecretKey\": \"hfucj5jatq8h\"\r\n}"
 						},
 						"url": "{{baseurl}}/self/balance"
 					},
@@ -181,7 +179,7 @@
 							}
 						}
 					],
-					"_postman_id": "6dbdc754-3479-453f-a5d8-cf3436fbbdf8",
+					"id": "6dbdc754-3479-453f-a5d8-cf3436fbbdf8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -266,7 +264,7 @@
 							}
 						}
 					],
-					"_postman_id": "aefd8874-3481-44d0-8893-b39531290d06",
+					"id": "aefd8874-3481-44d0-8893-b39531290d06",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -293,7 +291,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "0fba98df-6333-401e-aa2b-902c1ffedfd0"
+			"id": "0fba98df-6333-401e-aa2b-902c1ffedfd0"
 		},
 		{
 			"name": "Wallets API",
@@ -330,7 +328,7 @@
 							}
 						}
 					],
-					"_postman_id": "79dd24f3-462d-42d3-bd5a-544bc6433ff3",
+					"id": "79dd24f3-462d-42d3-bd5a-544bc6433ff3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -397,7 +395,7 @@
 							}
 						}
 					],
-					"_postman_id": "97957416-021b-4ec7-9f56-0b592c5e6f17",
+					"id": "97957416-021b-4ec7-9f56-0b592c5e6f17",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -467,7 +465,7 @@
 							}
 						}
 					],
-					"_postman_id": "c5d0f9a2-c1b5-440c-81ae-20c1d6c52a9c",
+					"id": "c5d0f9a2-c1b5-440c-81ae-20c1d6c52a9c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -534,7 +532,7 @@
 							}
 						}
 					],
-					"_postman_id": "688fbf1f-875e-49c4-b9ec-18c6e5756902",
+					"id": "688fbf1f-875e-49c4-b9ec-18c6e5756902",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -592,7 +590,7 @@
 							}
 						}
 					],
-					"_postman_id": "27c99ddf-4ba1-44a4-856b-843a381153d4",
+					"id": "27c99ddf-4ba1-44a4-856b-843a381153d4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -650,7 +648,7 @@
 							}
 						}
 					],
-					"_postman_id": "a68c53d9-ef58-4100-a5ff-58b083a56256",
+					"id": "a68c53d9-ef58-4100-a5ff-58b083a56256",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -725,7 +723,7 @@
 							}
 						}
 					],
-					"_postman_id": "6d5a60c3-7178-4737-a59a-0a7a17fec1a6",
+					"id": "6d5a60c3-7178-4737-a59a-0a7a17fec1a6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -773,7 +771,7 @@
 							}
 						}
 					],
-					"_postman_id": "ee2aacb0-b842-44ca-866a-31a5de6df1bb",
+					"id": "ee2aacb0-b842-44ca-866a-31a5de6df1bb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -821,7 +819,7 @@
 							}
 						}
 					],
-					"_postman_id": "a6628c7f-b832-4496-9819-fb64ce480e8e",
+					"id": "a6628c7f-b832-4496-9819-fb64ce480e8e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -875,7 +873,7 @@
 							}
 						}
 					],
-					"_postman_id": "dd18dc34-1d11-4acd-81d0-689138b28f17",
+					"id": "dd18dc34-1d11-4acd-81d0-689138b28f17",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -923,7 +921,7 @@
 							}
 						}
 					],
-					"_postman_id": "c0bf6632-ac10-4a7f-9dd9-c4a3a5e62f11",
+					"id": "c0bf6632-ac10-4a7f-9dd9-c4a3a5e62f11",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -950,7 +948,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "48131b14-af7e-4639-a811-83e5e6c0afc5"
+			"id": "48131b14-af7e-4639-a811-83e5e6c0afc5"
 		}
 	],
 	"event": [
@@ -977,13 +975,12 @@
 	],
 	"variable": [
 		{
-			"id": "4b1e24e0-28e3-4459-bbca-a966b948cd49",
+			"id": "d4530413-bcaf-4d6e-b422-5bb6b4fd49cc",
 			"key": "baseurl",
-			"value": "https://sandbox.wallets.africa",
-			"type": "string"
+			"value": "https://sandbox.wallets.africa"
 		},
 		{
-			"id": "ddbadaff-b282-4235-9f9a-828a91c69791",
+			"id": "84c9c101-8f79-45de-acb7-5db89eb093e3",
 			"key": "baseUrl",
 			"value": "https://sandbox.wallets.africa",
 			"type": "string"
